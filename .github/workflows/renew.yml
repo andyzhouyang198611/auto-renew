@@ -13,7 +13,7 @@ jobs:
       - name: Renew Server
         run: |
           curl -s -X POST \
-          -H "Authorization: Bearer ptlc_esUHvXBQhREc2JtPYRCWWtdCVYsu0dOjHKh6kDAb42O" \
+          -H "Authorization: Bearer ${{ secrets.API_KEY }}" \
           -H "Accept: application/json" \
           -H "Content-Type: application/json" \
           "https://panel.epichost.pl/api/client/freeservers/13633716-8094-4b5c-a80c-a2b3c6205947/renew"
